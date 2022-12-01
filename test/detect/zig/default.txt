@@ -1,0 +1,29 @@
+const std = @import("std");
+
+// This is a comment
+
+/// This is a doc comment
+pub fn main(somevar: u6) anyerror!void {
+    std.debug.print("Hello, World!\n", .{});
+
+    const a: Abc = Abc {
+        .somevar = 12
+    };
+
+    const multiline = 
+        \\ABC
+        \\KEKW
+    ;
+}
+
+const Abc = struct {
+    somevar: u69
+};
+
+const Cde = union(enum) {
+    somevar: u69,
+
+    pub fn some() void {
+        unreachable;
+    }
+};
