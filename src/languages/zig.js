@@ -55,6 +55,7 @@ export default function(hljs) {
 
     const MAIN_KEYWORDS = [
         "const",
+        "let",
         "fn",
         // Repeat
         "inline",
